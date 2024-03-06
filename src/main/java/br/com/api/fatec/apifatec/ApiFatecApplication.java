@@ -27,6 +27,21 @@ public class ApiFatecApplication {
 		return  num;
 		
 	}
+	@RequestMapping("idade/{num}")
+	
+	String idade(@PathVariable Integer idade) {
+		
+		if (idade < 12) {
+			return System.out.printf("Criança");
+		}
+		else if (idade >= 12 && idade <= 18) {
+			System.out.printf("Criança");
+		}
+		
+		
+		return idade;
+	
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApiFatecApplication.class, args);
