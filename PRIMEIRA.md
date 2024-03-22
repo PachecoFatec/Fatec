@@ -1,1 +1,0 @@
-ARQUIVO criado pelas tela
