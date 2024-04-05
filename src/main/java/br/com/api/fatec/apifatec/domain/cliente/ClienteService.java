@@ -26,4 +26,19 @@ public class ClienteService {
 	public void deletarCliente(Long id) {
 		clienteRepository.deleteById(id);
 	}
+
+	public Cliente atualizarCliente(Long id, Cliente cliente) {
+		
+		Cliente clienteCadastrado = encontrarClientePorId(id);
+		
+		if(clienteCadastrado == null) {
+			return null;
+		}else {
+			clienteCadastrado.setNome(cliente.getNome());
+			clienteCadastrado.setEndereco(cliente.getEndereco());
+			clienteCadastrado.setRazaoSocial(cliente.getRazaoSocial());
+			clienteCadastrado.setEmail(cliente.getEmail());
+			return clienteRepository.save(cliente);
+		}	
+	}
 }
