@@ -11,6 +11,19 @@ public class ProdutoMapper {
 		produto.setQtde(dto.getQtde());
 		return produto;
 	}
+	public static ProdutoDTO toDTO(Produto produto) {
+		ProdutoDTO dto = new ProdutoDTO();
+		dto.setId(produto.getId());
+        dto.setNome(produto.getNome());
+        dto.setDescricao(produto.Descricao());
+        dto.setPreco(produto.getPreco());
+        dto.setQtde(produto.getQtde());
+        return dto;
+		
+	}
+	 public static List<ProdutoDTO> toDTOList(List<Produto> Produtos) {
+	        return produtos.stream().map(ProdutoMapper::toDTO).collect(Collectors.toList());
+	    }
 
 }
 
