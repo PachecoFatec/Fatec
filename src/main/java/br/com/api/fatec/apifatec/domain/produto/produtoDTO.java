@@ -1,6 +1,7 @@
 package br.com.api.fatec.apifatec.domain.produto;
 
 public class produtoDTO {
+	private Long id ;
 	private String nome;
 	private String descricao;
 	private double preco;
