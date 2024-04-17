@@ -1,10 +1,11 @@
 package br.com.api.fatec.apifatec.domain.produto;
 import br.com.api.fatec.apifatec.domain.produto.*;
+import br.com.api.fatec.apifatec.entities.Produto;
 
 public class ProdutoMapper {
-	public static Produto toEntity(ProdutoDTO dto) {
+	public static Produto toEntity(produtoDTO dto) {
 		Produto produto = new Produto();
-		produto.setID(dto.getId());
+		produto.setId(dto.getId());
 		produto.setNome(dto.getNome());
 		produto.setDescricao(dto.getDescricao());
 		produto.setPreco(dto.getPreco());

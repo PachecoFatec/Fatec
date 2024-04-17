@@ -39,7 +39,7 @@ public class ProdutoService {
 		}else {
 			produtoCadastrado.setNome(produto.getNome());
 			produtoCadastrado.setDescricao(produto.getDescricao());
-			produtoCadastrado.setPreco(produto.getDescricao());
+			produtoCadastrado.setPreco(produto.getPreco());
 			produtoCadastrado.setQtde(produto.getQtde());
 			
 			

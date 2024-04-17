@@ -1,9 +1,9 @@
 package br.com.api.fatec.apifatec.domain.produto;
 
-import org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import br.com.api.fatec.apifatec.entities.Produto;
 
-public class ProdutoRepository extends JpaRepository<Produto, Long > {
+public interface ProdutoRepository extends JpaRepository<Produto, Long > {
 
 }
