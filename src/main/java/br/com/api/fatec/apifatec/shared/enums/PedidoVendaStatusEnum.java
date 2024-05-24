@@ -1,5 +1,5 @@
 package br.com.api.fatec.apifatec.shared.enums;
 
-public class PedidoVendaStatusEnum {
-
+public enum PedidoVendaStatusEnum {
+    CONCLUIDO, CANCELADO
 }

@@ -4,6 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import br.com.api.fatec.apifatec.entities.Produto;
 
-public interface ProdutoRepository extends JpaRepository<Produto, Long > {
+
+public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 
 }

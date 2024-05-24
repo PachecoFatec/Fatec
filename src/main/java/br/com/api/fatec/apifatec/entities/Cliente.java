@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import javax.validation.constraints.Email;
 
 @Entity
 @Table(name = "clientes")
@@ -25,6 +26,7 @@ public class Cliente {
 	private String endereco;
 
 	@Column()
+	@Email
 	private String email;
 
 	
